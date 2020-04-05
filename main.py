@@ -11,11 +11,6 @@ mat_2 = [
     [20, 30, 40, 50]
 ]
 
-
-def dot_product_element(mat_a, mat_b, ri, ci):
-    return sum([mat_a[ri][i] * mat_b[i][ci] for i in range(len(mat_a[ri]))])
-
-
-res_mat = [[dot_product_element(mat_1, mat_2, row_index, col_index) for col_index in range(l)] for row_index in range(n)]
+res_mat = [[sum([mat_1[row_index][i] * mat_2[i][col_index] for i in range(len(mat_1[row_index]))]) for col_index in range(l)] for row_index in range(n)]
 
 print(res_mat)

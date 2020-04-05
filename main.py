@@ -11,6 +11,6 @@ mat_2 = [
     [20, 30, 40, 50]
 ]
 
-res_mat = None
+res_mat = [[0 for col_index in range(l)] for row_index in range(n)]
 
 print(res_mat)

@@ -11,6 +11,6 @@ mat_2 = [
     [20, 30, 40, 50]
 ]
 
-res_mat = [[sum([mat_1[row_index][i] * mat_2[i][col_index] for i in range(len(mat_1[row_index]))]) for col_index in range(l)] for row_index in range(n)]
+res_mat = [[sum([mat_1[row_index][i] * mat_2[i][col_index] for i in range(m)]) for col_index in range(l)] for row_index in range(n)]
 
 print(res_mat)

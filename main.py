@@ -11,6 +11,11 @@ mat_2 = [
     [20, 30, 40, 50]
 ]
 
-res_mat = [[0 for col_index in range(l)] for row_index in range(n)]
+
+def dot_product_element(mat_a, mat_b, ri, ci):
+    return 0
+
+
+res_mat = [[dot_product_element(mat_1, mat_2, row_index, col_index) for col_index in range(l)] for row_index in range(n)]
 
 print(res_mat)
